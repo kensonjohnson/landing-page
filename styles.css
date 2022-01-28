@@ -1,91 +1,206 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 body {
     height: 100vh;
     margin: 0;
-    overflow: hidden;
     font-family: Roboto, sans-serif;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-  }
+    align-items: center;
+    gap: 20px;
+}
 
-  .footer {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 16px;
-      background-color: #1F2937;
-      height: 50px;
-      color: #e5e7eb;
-  }
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px;
+    background-color: #1F2937;
+    height: 50px;
+    color: #e5e7eb;
+    width: 100%;
+}
 
-  .header-logo {
-      color: #f9faf8;
-      font-size: 24px;
-      height: 100px;
-  }
+.header-logo {
+    color: #f9faf8;
+    font-size: 24px;
+    height: 100px;
+}
 
-  .header-links {
-      display: flex;
-      list-style-type: none;
-      color: #e5e7eb;
-      font-size: 18px;
-      height: 100px;
-  }
+.header-links {
+    display: flex;
+    list-style-type: none;
+    color: #e5e7eb;
+    font-size: 18px;
+    height: 100px;
+    justify-content: space-around;
+    gap: 10px;
+}
 
-  .hero {
-      display: flex;
-      background-color: #1F2937;
-      height: 500px;
-  }
+a:link {
+    text-decoration: none;
+    color: #e5e7eb;
+}
 
-  .hero-spacer {
-      flex: 1;
-  }
+a:visited {
+    text-decoration: none;
+    color: #e5e7eb;
+}
 
-  .hero-left {
-      display: flex;
-      flex: 2;
-      flex-direction: column;
-  }
+a:hover {
+    text-decoration: none;
+}
 
-  .hero-right {
-      display: flex;
-      flex: 2;
-      flex-direction: column;
-      align-items: flex-end;
-  }
+a:active {
+    text-decoration: none;
+}
 
-  .hero-body {
-      display: flex;
-      flex-direction: column;
-  }
+ul {
+    color: #e5e7eb;
+}
 
-  .hero-body-title {
-      color: #f9faf8;
-      font-size: 48px;
-      font-weight: 800;
-  }
-  
-  .hero-body-text {
-      color: #e5e7eb;
-      font-size: 16px;
-  }
+.hero {
+    display: flex;
+    background-color: #1F2937;
+    height: 500px;
+    width: 100%;
+}
 
-  .hero-button {
-      color: #e5e7eb;
-      background-color: #2882f6;
-      border-radius: 7px;
-      font-size: 18px;
-      height: 30px;
-      width: 100px;
-      margin: 5px;
-      border: none;
-  }
+.hero-spacer {
+    flex: 1;
+}
 
-  .hero-image {
-      height: 250px;
-      width: 400px;
-      background-color: gray;
-  }
+.hero-left {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.hero-right {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-body-title {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.hero-body-text {
+    color: #e5e7eb;
+    font-size: 16px;
+}
+
+.hero-button {
+    color: #e5e7eb;
+    background-color: #2882f6;
+    border-radius: 7px;
+    font-size: 18px;
+    height: 30px;
+    width: 100px;
+    margin: 5px;
+    border: none;
+}
+
+.hero-image {
+    height: 250px;
+    width: 400px;
+    background-color: gray;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.info-title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 25px;
+}
+
+.info-array {
+    display: flex;
+    gap: 15px;
+}
+
+.info-array-item {
+    height: auto;
+    width: 151px;
+}
+
+.info-array-item-image {
+    height: 150px;
+    width: 150px;
+    border: solid;
+    border-width: 3px;
+    border-radius: 9px;
+    border-color: #2882f6;
+}
+
+.info-array-item-text {
+    font-size: 14px;
+    color: gray;
+    text-align: center;
+}
+
+.quote {
+    margin-bottom: 150px;
+}
+
+.quote-body {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 100;
+    width: 600px;
+}
+
+.quote-signature {
+    width: 600px;
+    text-align: right;
+}
+
+.call-box {
+    background-color: #2882f6;
+    border-radius: 8px;
+    display: flex;
+    padding: 40px 100px;
+    gap: 100px;
+}
+
+.call-box-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.call-box-header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #e5e7eb;
+}
+
+.call-box-text {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #e5e7eb;
+}
+
+.call-box-button {
+    color: #e5e7eb;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 7px;
+    padding: 5px 10px;
+    text-align: center;
+}
